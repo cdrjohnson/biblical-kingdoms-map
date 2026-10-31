@@ -186,6 +186,18 @@ Reference map: Seleucid Empire 200-64 BC - ru.svg (Kaidor, CC BY-SA 3.0). It sho
 | 69 to 64 BC | Overlap **0.22 → 0.92**. |
 | 312 to 200 BC and 141 to 129 BC | Old outlines kept and marked "not re-checked"; the map shows no stage in these years. |
 
+### Batch 4a: Medes and Lydia (new)
+
+Reference maps: Median Empire-en.svg (Szajci and WillemBK, CC BY-SA 3.0) and Lydian kingdom-pt.svg (Szajci, CC BY 3.0). Both were placed on Natural Earth with a polynomial fit to the coast and the maps' own coordinates.
+
+| Kingdom (years) | Checked against | Result |
+|---|---|---|
+| Medes, 585 to 550 BC | Median Empire-en map | New outline (overlap **0.41 → 0.95**). The map's extent reaches the Halys in Cappadocia, takes in northern Mesopotamia and runs down to the Gulf coast of Iran. The eastern edge (about 64 E) is approximate. |
+| Medes, 612 to 585 BC | none | Old outline kept and marked "not re-checked". |
+| Lydia (new kingdom), 585 to 546 BC | Lydian kingdom map | New kingdom entry (overlap **0.98**). Before 585 BC Lydia was smaller and no open map shows it, so it is not drawn. |
+
+**Disputed or debated.** A second open map, Median Empire.svg (Crates, CC BY-SA 4.0), draws the Medes smaller in the west (no Cappadocia, no Jazira). It could not be fitted reliably (best coast agreement about 0.82), so it is listed as checked but not measured. The app draws the first map and says in the Medes panel that the two disagree; the size and even the unity of the Median state are debated and Herodotus is the main source.
+
 ## City coordinates fixed
 
 About 100 cities were compared with Pleiades, and every city with a Wikipedia coordinate was compared with that. Most agreed within 2 km. These were moved:

@@ -259,6 +259,10 @@ ok("Egypt at 700 BC cites the Kushite Empire map", /Egypt kush/.test(await openF
 await setYearBox("-150");
 await page.waitForTimeout(300);
 ok("Seleucid phase after Apamea names the Seleucid reference map", /Seleucid Empire 200-64 BC/.test(await openFromIndex(/^\d+\s*Seleucid/)));
+await setYearBox("-560");
+await page.waitForTimeout(300);
+{ const t = await openFromIndex(/^\d+\s*Medes/); ok("Medes at 560 BC cite the Median Empire-en map and a Disputed note naming the other map", /Median Empire-en/.test(t) && /disputed or debated/i.test(t) && /Median Empire\.svg/.test(t)); }
+ok("Lydia is drawn at 560 BC and cites its reference map", /Lydian kingdom-pt/.test(await openFromIndex(/^\d+\s*Lydia/)));
 await setYearBox("1317");
 await page.waitForTimeout(300);
 ok("Mamluk phase names the 1317 reference map", /Mamluk Sultanate of Cairo 1317/.test(await findKingdom(/Ayyubid and Mamluk/)));
