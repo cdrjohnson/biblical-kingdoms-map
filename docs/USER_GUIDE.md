@@ -103,7 +103,7 @@ Coloured areas on the map are the kingdoms, empires and states that existed in t
 
 - **Click an area or its number** to open its panel (see section 10).
 - **Dashed outlines** mean the area is contested, a tributary, a proposal or provisional (see section 12).
-- The outlines are **approximate**. They are hand-drawn simplifications, not surveyed borders.
+- The outlines are **approximate**. They are hand-drawn simplifications, not surveyed borders. Many were redrawn in October 2026 against open reference maps and Natural Earth coasts, and each panel names what it was checked against (see `docs/ATLAS_CHECK.md` in the repository).
 
 ![The United Monarchy at 950 BC](images/desktop-united-monarchy.png)
 

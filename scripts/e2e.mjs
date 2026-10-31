@@ -187,6 +187,30 @@ await setYearBox("1949");
 await page.waitForTimeout(300);
 ok("modern era caption", (await page.getByText(/armistice|Armistice/).count()) > 0);
 
+/* atlas check: modern Israel has its own id (it duplicated the ancient kingdom's) and provenance shows in the panel */
+const findKingdom = async (re) => {
+  const m = page.locator('div[style*="touch-action: none"] svg g[style*="cursor: pointer"]');
+  const n = await m.count();
+  for (let i = 0; i < n; i++) { await m.nth(i).click({ force: true }); await page.waitForTimeout(150); const t = await detailsText(); if (re.test(t)) return t; }
+  return "";
+};
+await setYearBox("2000");
+await page.waitForTimeout(300);
+const isrTxt = await findKingdom(/Israel \(within the 1949 armistice lines\)/);
+ok("clicking modern Israel opens its own 1949-lines panel (not the ancient kingdom)", isrTxt !== "" && !/northern kingdom/i.test(isrTxt));
+await setYearBox("1135");
+await page.waitForTimeout(300);
+const crTxt = await findKingdom(/Crusader states/);
+ok("Crusader panel names the reference map it was checked against", /Map Crusader states 1135/.test(crTxt) && /Natural Earth/.test(crTxt));
+await setYearBox("1500");
+await page.waitForTimeout(300);
+ok("Ottoman Empire is drawn before 1517 (gap filled)", (await findKingdom(/Ottoman Empire/)) !== "");
+await setYearBox("1700");
+await page.waitForTimeout(300);
+ok("Iran panel shows the Safavid-era extent with its reference map", /Safavid Empire 1501 1722/.test(await findKingdom(/Persia \/ Iran/)));
+ok("References lists the reference maps and data group", (await page.getByText("Reference maps and data checked").count()) >= 1);
+await setYearBox("AD 30");
+
 /* full screen */
 await setYearBox("AD 30");
 await page.getByRole("button", { name: "Full screen" }).first().click();

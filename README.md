@@ -6,7 +6,7 @@ An interactive map of the Biblical kingdoms, empires and modern states, from **2
 
 **Live demo:** [cdrjohnson.github.io/biblical-kingdoms-map](https://cdrjohnson.github.io/biblical-kingdoms-map/)
 
-**User guide:** [docs/USER_GUIDE.md](docs/USER_GUIDE.md) · [PDF](docs/User-Guide.pdf)
+**User guide:** [docs/USER_GUIDE.md](docs/USER_GUIDE.md) · [PDF](docs/User-Guide.pdf) · **Outline checks:** [docs/ATLAS_CHECK.md](docs/ATLAS_CHECK.md)
 
 ## Features
 
@@ -20,7 +20,7 @@ An interactive map of the Biblical kingdoms, empires and modern states, from **2
 - **Map index** listing what is on the map for the selected year.
 - **Full screen** using the browser's Fullscreen API, with the slider, layers, index and details still available.
 - **Remembers the last year** you chose (in `localStorage`) and opens at **AD 30** by default.
-- **Sources throughout:** about 250 references (Bible atlases, encyclopedias, museum essays, Wikipedia, and UN documents and treaty texts for the modern period), grouped at the bottom of the page.
+- **Sources throughout:** about 290 references (Bible atlases, encyclopedias, museum essays, Wikipedia, and UN documents and treaty texts for the modern period), grouped at the bottom of the page.
 - Works on desktop and phones, in light and dark mode (follows your system setting), with no server and no tracking.
 
 ## Install and run
