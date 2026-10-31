@@ -1,0 +1,19 @@
+Biblical Kingdoms Map: third-party notices
+
+Scripture
+  Scripture references in the app link out to BibleGateway (https://www.biblegateway.com),
+  using the NRSVUE text on their site. No Bible text is bundled in this repository.
+  If verse text is ever quoted in this project, it will be from a public-domain
+  translation: the King James Version (KJV) or the World English Bible (WEB).
+
+Sources and references
+  Each kingdom, route, city and era links to the sources it was written from:
+  Wikipedia (CC BY-SA 4.0 for the linked articles), Encyclopaedia Britannica,
+  museum and academic pages, and UN, treaty and other primary documents.
+  These are links only; their content is not copied into the repository.
+  Map outlines are hand-drawn approximations made for this project. They are not
+  traced from any atlas, and are not surveyed borders.
+
+Software
+  The app is built with React (MIT) and Vite (MIT). Testing and the PDF guide use
+  Playwright (Apache-2.0) and marked (MIT).
