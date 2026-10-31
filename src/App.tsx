@@ -263,7 +263,8 @@ const S: Record<string, Src> = {
   wNK: W_("New_Kingdom_of_Egypt", "New Kingdom of Egypt"), wTIP: W_("Third_Intermediate_Period_of_Egypt", "Third Intermediate Period"), wLate: W_("Late_Period_of_ancient_Egypt", "Late Period of Egypt"),
   wSea: W_("Sea_Peoples", "Sea Peoples"), wMern: W_("Merneptah_Stele", "Merneptah Stele"), wMesha: W_("Mesha_Stele", "Mesha Stele"), wDan: W_("Tel_Dan_Stele", "Tel Dan Stele"),
   wSenn: W_("Sennacherib%27s_Annals", "Sennacherib's Annals"), wQarqar: W_("Battle_of_Qarqar", "Battle of Qarqar"), wJudges: W_("Book_of_Judges", "Book of Judges"), wExodus: W_("Exodus", "Exodus"),
-  wAbr: W_("Abraham", "Abraham"), wChron: W_("Biblical_chronology", "Biblical chronology"), wJChron: W_("Chronology_of_Jesus", "Chronology of Jesus"), wMin: W_("Ministry_of_Jesus", "Ministry of Jesus"),
+  wAbr: W_("Abraham", "Abraham"), wChron: W_("Biblical_chronology", "Biblical chronology"), wJChron: W_("Chronology_of_Jesus", "Chronology of Jesus"), wYear0: W_("Year_zero", "Year zero"), wAD: W_("Anno_Domini", "Anno Domini"), wDion: W_("Dionysius_Exiguus", "Dionysius Exiguus"),
+  brAD: { t: "Britannica Kids: AD", w: "Encyclopaedia Britannica (Students edition)", g: "Encyclopedias", u: "https://kids.britannica.com/students/article/AD/309640" }, wMin: W_("Ministry_of_Jesus", "Ministry of Jesus"),
   wPaul: W_("Paul_the_Apostle", "Paul the Apostle"), wReturn: W_("Return_to_Zion", "Return to Zion"), wEzra: W_("Ezra", "Ezra"), wNeh: W_("Nehemiah", "Nehemiah"), wCapt: W_("Babylonian_captivity", "Babylonian captivity"),
   wViaM: W_("Via_Maris", "Via Maris"), wKH: W_("King%27s_Highway_(ancient)", "King's Highway (ancient)"), wInc: W_("Incense_trade_route", "Incense trade route"), wSilk: W_("Silk_Road", "Silk Road"),
   wAlex: W_("Alexander_the_Great", "Alexander the Great"), wDiad: W_("Wars_of_the_Diadochi", "Wars of the Diadochi"), wMaccRev: W_("Maccabean_Revolt", "Maccabean Revolt"), wSiege63: W_("Siege_of_Jerusalem_(63_BC)", "Siege of Jerusalem (63 BC)"),
@@ -910,7 +911,7 @@ const parseYear = (raw: string): { y?: number; err?: string; note?: string } => 
   if (!m && !era) return { err: "Could not read that year. Try 586 BC, -586, AD 70, 70 CE or 1948." };
   const n = parseInt(num, 10);
   if (!isFinite(n) || num.length > 6) return { err: "That number is too large." };
-  if (n === 0) return { err: "There is no year 0 (1 BC is followed by AD 1)." };
+  if (n === 0) return { y: 1, note: "There is no year 0: 1 BC is followed by AD 1, so this shows AD 1." };
   const bc = era === "BC" || era === "BCE";
   const ad = era === "AD" || era === "CE";
   if (sign === "-" && ad) return { err: "A minus sign and AD/CE contradict each other." };
@@ -1647,7 +1648,7 @@ const ERAS: Era[] = [
   { id: "per", name: "Persian era", a: -539, b: -332, text: "Cyrus's decree (538 BC) lets Judeans return; the Second Temple is completed c. 516/515 BC. Judah is a small province. Nehemiah rebuilds the walls (445 BC); Ezra's mission is dated 458 BC by tradition, though some scholars place it c. 398 BC.", scr: ["Ezra 1", "Ezra 6", "Nehemiah 2", "Esther 1"], src: ["brCyrus", "brAch", "metAch", "wReturn", "brEzra", "brNeh", "wCylinder"] },
   { id: "hel", name: "Hellenistic era: Ptolemies and Seleucids", a: -332, b: -167, text: "Alexander conquers the Persian empire (334 to 323 BC) and his generals divide it. The Ptolemies hold Judea until 200 BC, then the Seleucids take it. Antiochus IV's suppression of Jewish practice in 167 BC sparks revolt.", scr: ["Daniel 8", "Daniel 11", "1 Maccabees 1"], src: ["wAlex", "wDiad", "brSel", "brPtol", "metSel", "wHell", "wPanium"] },
   { id: "has", name: "Maccabean revolt and the Hasmoneans", a: -167, b: -63, text: "Judas Maccabeus rededicates the Temple (164 BC). Hasmonean leaders win autonomy c. 142 BC and, under John Hyrcanus and Alexander Jannaeus, expand to Samaria, Idumea, Galilee and parts of Transjordan. A civil war invites Rome; Pompey takes Jerusalem in 63 BC.", scr: ["1 Maccabees 2", "1 Maccabees 13", "2 Maccabees 8"], src: ["brMacc", "wHasm", "wMaccRev", "wSiege63"] },
-  { id: "hrd", name: "Roman conquest and Herod the Great", a: -63, b: -4, text: "Judea becomes a Roman client state. Rome names Herod king (37 BC); he rebuilds the Temple and founds Caesarea, and rules until 4 BC. Egypt, the last Hellenistic kingdom, falls to Rome in 30 BC. The birth of Jesus is traditionally placed shortly before Herod's death.", scr: ["Matthew 2", "Luke 1", "Luke 2"], src: ["brHerod", "wHerod", "wHerodG", "wRomR", "wPtol"] },
+  { id: "hrd", name: "Roman conquest and Herod the Great", a: -63, b: -4, text: "Judea becomes a Roman client state. Rome names Herod king (37 BC); he rebuilds the Temple and founds Caesarea, and rules until 4 BC. Egypt, the last Hellenistic kingdom, falls to Rome in 30 BC. Why is Jesus' birth not at 0? There is no year 0: the calendar goes from 1 BC straight to AD 1. The AD count was devised by Dionysius Exiguus around AD 525. Matthew 2 places the birth under Herod the Great, who died c. 4 BC, so it is dated c. 6 to 4 BC.", scr: ["Matthew 2", "Luke 1", "Luke 2"], src: ["brHerod", "wHerod", "wHerodG", "wRomR", "wPtol", "wYear0", "wAD", "wDion", "brAD"] },
   { id: "jes", name: "Roman Judea and the ministry of Jesus", a: -4, b: 30, text: "Herod's sons divide the kingdom: Archelaus, Antipas and Philip. Judea becomes a Roman province in AD 6. Jesus teaches mainly in Galilee and Judea under Antipas and the prefect Pontius Pilate (AD 26 to 36); his crucifixion is dated AD 30 or 33.", scr: ["Luke 2", "Luke 3", "Matthew 4", "John 18"], src: ["wMin", "wJChron", "brJesus", "wPilate", "wHerod"] },
   { id: "chu", name: "Early church and the First Jewish-Roman War", a: 30, b: 101, text: "Paul's missions carry the gospel around the Mediterranean (c. AD 46 to 62). Herod Agrippa I rules a reunited Judea (AD 41 to 44). The revolt of AD 66 ends with the Temple's destruction in AD 70.", scr: ["Acts 9", "Acts 12", "Acts 13", "Acts 28"], src: ["wPaul", "brPaul", "wRomE", "wFJRW", "wAgrippaI"] },
   { id: "lr", name: "Later Roman Empire and Sasanian Persia", a: 101, b: 395, text: "After the First Jewish-Roman War Judea stayed a Roman province. After the Bar Kokhba revolt (AD 132 to 135) Rome enlarged and renamed it Syria Palaestina. In Persia the Sasanians replaced the Parthians in AD 224 and became Rome's main eastern rival. This stretch is compressed on the timeline.", scr: [], src: ["wSyriaPal", "wBarK", "wSas", "brSas", "wRomE"] },
@@ -1756,6 +1757,17 @@ export default function App() {
   );
   const [yMsg, setYMsg] = useState<{ err: boolean; t: string }>({ err: false, t: "" });
   useEffect(() => { if (!yEdit) setYTxt(yr(year)); }, [year, yEdit]);
+  /* stepping across 1 BC / AD 1 skips the missing year 0: say so briefly */
+  const prevYr = useRef<number>(year);
+  useEffect(() => {
+    const p = prevYr.current; prevYr.current = year;
+    if ((p === -1 && year === 1) || (p === 1 && year === -1)) {
+      setYMsg({ err: false, t: "There is no year 0: 1 BC is followed by AD 1." });
+      const t = setTimeout(() => setYMsg((m: { err: boolean; t: string }) => (m.t.indexOf("no year 0") >= 0 ? { err: false, t: "" } : m)), 5000);
+      return () => clearTimeout(t);
+    }
+    return undefined;
+  }, [year]);
   const applyYear = () => {
     const r = parseYear(yTxt);
     if (r.y === undefined) { setYMsg({ err: true, t: r.err || "Could not read that year." }); return; }
@@ -2523,10 +2535,11 @@ export default function App() {
           ["United monarchy", "Saul c. 1050, David c. 1010, Solomon c. 970 to 931 BC", "Size and centralization of the kingdom are debated."],
           ["Fall of Samaria and Jerusalem", "722 BC and 587 or 586 BC", "Well attested; the year of Jerusalem's fall depends on the calendar used."],
           ["Ezra", "458 BC (traditional)", "Many scholars place his mission c. 398 BC, after Nehemiah."],
-          ["Jesus", "Born c. 6 to 4 BC; ministry c. AD 27 to 30", "Crucifixion is dated AD 30 or 33."],
+          ["Jesus", "Born c. 6 to 4 BC; ministry c. AD 27 to 30", "Crucifixion is dated AD 30 or 33. The birth is not at year 0: see the note below."],
           ["Paul's journeys", "c. AD 46 to 62", "Approximate; reconstructed from Acts and the letters."],
         ]} />
         <Text>Sources for this table: Britannica on Exodus and Ezra, Wikipedia on Biblical chronology and the Chronology of Jesus (both linked below).</Text>
+        <Text>Why is Jesus' birth not at 0? There is no year 0: the calendar goes from 1 BC straight to AD 1. The AD count was devised by Dionysius Exiguus around AD 525. Matthew 2 places the birth under Herod the Great, who died c. 4 BC, so it is dated c. 6 to 4 BC. (Sources: Wikipedia on Year zero, Anno Domini and Dionysius Exiguus; Britannica Kids on AD; Britannica on Herod, all linked below.)</Text>
       </Section>
 
       <Section heading="Modern borders: how this page labels them">

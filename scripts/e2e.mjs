@@ -46,10 +46,15 @@ ok("year box clamps to 2000 BC", (await readout()) === "2000 BC", await readout(
 await setYearBox("banana");
 ok("year box shows a message for unreadable input", (await page.locator('[role="status"]').count()) > 0 && (await readout()) === "2000 BC");
 
+/* typed 0 skips to AD 1 with a hint */
+await setYearBox("0");
+ok("typing 0 shows AD 1 with a hint", (await readout()) === "AD 1" && /no year 0/i.test(await page.locator('[role="status"]').first().innerText()), await readout());
+{ const body = await page.locator("body").innerText(); ok("the page explains why the birth of Jesus is not at year 0", /Why is Jesus' birth not at 0\?/.test(body) && /Dionysius Exiguus around AD 525/.test(body) && /Herod the Great, who died c\. 4 BC/.test(body)); }
 /* ± buttons: skip year 0 */
 await setYearBox("AD 1");
 await page.getByRole("button", { name: "One year earlier" }).first().click();
 ok("minus: AD 1 goes to 1 BC", (await readout()) === "1 BC", await readout());
+ok("stepping across year 0 shows a brief hint", /no year 0/i.test(await page.locator('[role="status"]').first().innerText()));
 await page.getByRole("button", { name: "One year later" }).first().click();
 ok("plus: 1 BC goes to AD 1", (await readout()) === "AD 1", await readout());
 await page.getByRole("button", { name: "One year later" }).first().click({ modifiers: ["Shift"] });

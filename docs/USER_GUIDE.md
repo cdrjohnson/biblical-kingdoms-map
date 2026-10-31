@@ -48,7 +48,7 @@ Next to the year there is a box where you can **type a year** and press **Enter*
 | `AD 70`, `70 CE` or just `70` | AD 70 |
 | `1948` | AD 1948 |
 
-Rules to remember: a plain positive number means **AD**, there is **no year 0** (1 BC is followed by AD 1), and years outside the map's range are moved to the nearest end (2000 BC or 2026) with a short note. If the box cannot read what you typed, it says so under the box. The box always shows the current year as you move the slider.
+Rules to remember: a plain positive number means **AD**, there is **no year 0** (1 BC is followed by AD 1; typing 0 shows AD 1 with a short hint), and years outside the map's range are moved to the nearest end (2000 BC or 2026) with a short note. If the box cannot read what you typed, it says so under the box. The box always shows the current year as you move the slider.
 
 ### The − and + buttons
 
@@ -57,7 +57,7 @@ At each end of the slider are two square buttons:
 - **−** goes **one year earlier**, **+** goes **one year later**.
 - **Hold** the button to repeat. After about half a second it speeds up, and after about a second more it moves **10 years** at a time.
 - **Shift + click** moves 10 years at once.
-- They skip the missing year 0, so AD 1 minus one year is 1 BC.
+- They skip the missing year 0, so AD 1 minus one year is 1 BC. A short hint under the year box says so when you step across it.
 
 ### Step, Previous and Next era, and Play
 
@@ -242,6 +242,8 @@ To start again at AD 30, type `AD 30` in the year box.
 ---
 
 ## 15. FAQ
+
+**Why isn't the birth of Jesus at 0 BC/AD?** There is no year 0: the calendar goes from 1 BC straight to AD 1. The AD count was devised by Dionysius Exiguus around AD 525. Matthew 2 places the birth under Herod the Great, who died c. 4 BC, so it is dated c. 6 to 4 BC. The same note is in the Herod era caption and under the dating table at the bottom of the page.
 
 **Why does the slider move so slowly in the Biblical period?** On purpose: the scale gives the Biblical period the most room, and shrinks later centuries.
 
