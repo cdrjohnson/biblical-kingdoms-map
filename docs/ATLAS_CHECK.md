@@ -216,7 +216,7 @@ Reference map: Urartu 743-en.svg (Sémhur, CC BY-SA 4.0), "Urartu at its greates
 
 | Kingdom (years) | Checked against | Result |
 |---|---|---|
-| Urartu (new kingdom), 764 to 735 BC | Urartu 743 map ("Urartu and its vassals") | New kingdom entry from the map's fill; overlap with the filled map **0.97**. The map's small allied Neo-Hittite pocket in northern Syria is not drawn. |
+| Urartu (new kingdom), 764 to 735 BC | Urartu 743 map ("Urartu and its vassals") | New kingdom entry from the map's fill; overlap with the filled map **0.97**. It includes the small north Syrian lands (Samal, Arpad) that the map shades in the same yellow. |
 | Urartu, c. 860 to 764 and 735 to 590 BC | none | Not drawn. A second map, Urartu 738-668.png (public domain, Laszlovszky András), shows overlapping hand-drawn outline strokes that could not be separated reliably, so no earlier or later phase was redrawn. |
 
 **Disputed or debated.** The Urartu panel notes that Ararat in 2 Kings 19:37 and Jeremiah 51:27 is generally identified with Urartu, while the mountain of Genesis 8:4 is a separate question that the map does not address.
