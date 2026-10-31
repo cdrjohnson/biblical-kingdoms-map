@@ -210,6 +210,17 @@ Reference maps: Map of the Parthian Empire under Mithridates II.svg (Ro4444 and 
 
 **Disputed or debated.** The two maps disagree about Parthia's reach (the outlines overlap 0.64): the 94 BC map runs from Armenia to Arachosia and the Paradan coast; the French map stops near Herat and the Hilmand and leaves Armenia out. The Parthia panel says so and does not pick a side.
 
+### Batch 4c: Urartu (new)
+
+Reference map: Urartu 743-en.svg (Sémhur, CC BY-SA 4.0), "Urartu at its greatest extent during king Sarduri II, in -743". It was placed with a linear fit to 11 city control points (residuals mostly under 0.4 degree, the largest 0.5 degree).
+
+| Kingdom (years) | Checked against | Result |
+|---|---|---|
+| Urartu (new kingdom), 764 to 735 BC | Urartu 743 map ("Urartu and its vassals") | New kingdom entry from the map's fill; overlap with the filled map **0.97**. The map's small allied Neo-Hittite pocket in northern Syria is not drawn. |
+| Urartu, c. 860 to 764 and 735 to 590 BC | none | Not drawn. A second map, Urartu 738-668.png (public domain, Laszlovszky András), shows overlapping hand-drawn outline strokes that could not be separated reliably, so no earlier or later phase was redrawn. |
+
+**Disputed or debated.** The Urartu panel notes that Ararat in 2 Kings 19:37 and Jeremiah 51:27 is generally identified with Urartu, while the mountain of Genesis 8:4 is a separate question that the map does not address.
+
 ## City coordinates fixed
 
 About 100 cities were compared with Pleiades, and every city with a Wikipedia coordinate was compared with that. Most agreed within 2 km. These were moved:
