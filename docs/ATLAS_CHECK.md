@@ -126,6 +126,23 @@ Reference maps: Biblica Open Bible Maps 05, 06 and 07 (Biblica, Inc. and Biblica
 
 Disputed or debated notes were added to the Israel and Aram panels: 2 Kings 10:32 to 33 says Hazael took all of Gilead, while the 830 BC map leaves Israel a strip east of the Jordan. The outlines follow the map and the panels say the question is open.
 
+### Batch 2b: Hasmonean Judea, Nabataea, Herodian Kingdom
+
+Reference maps: Map Hasmonean Kingdom-es.svg (Redtony, CC BY-SA 3.0; seven shaded phases from Judas Maccabeus to Alexander Jannaeus), Hyrcanus II Map.png and Herodian Kingdom.png (Rh0809, CC BY-SA 4.0; both simplified illustrations, fitted by their city icons to about 0.1 degrees), and Nabatean Kingdom map.jpg (F. Villeneuve and L. Nehmé, IFPO, CC BY-SA 4.0). Outlines were redrawn by hand from interval scans of the maps; the fills were used only to measure overlap.
+
+| Kingdom (years) | Checked against | Result |
+|---|---|---|
+| Hasmonean, Judas Maccabeus, 167-145 BC | Hasmonean map, first fill | Overlap **0.37 → 0.91**. |
+| Hasmonean, Jonathan and Simon, 145-134 BC | first two fills | Overlap **0.34 → 0.85**. Simon's small additions are merged. |
+| Hasmonean, John Hyrcanus I, 134-104 BC | first four fills | Overlap **0.63 → 0.89**. The map's "possible annexations" of Hyrcanus (lower Galilee) are dashed. |
+| Hasmonean, Aristobulus I, 104-103 BC | first five fills | Overlap **0.54 → 0.89**. |
+| Hasmonean, Alexander Jannaeus, 103-63 BC | all seven fills | Overlap **0.63 → 0.87**. The map stops at about 36.1 E, so the Transjordan edge is approximate. |
+| Judea after Pompey, 63-37 BC | Hyrcanus II map | Judea with Idumea, Galilee and Perea, without Samaria and the coast. Overlap **0.44 → 0.83**. |
+| Herod's kingdom, 37-4 BC and AD 41-44 | Herodian Kingdom map | Now includes the Gaza coast, the Golan and the Hauran edge as that map draws them. Overlap **0.68 → 0.92**. |
+| Syria Palaestina, AD 135-395 | none | This phase used Herod's old outline; the old outline is kept as its own shape and marked "not re-checked". |
+| Nabataea at its maximal extent, 87-72 BC (new phase) | Nabatean Kingdom map (limit line only) | Drawn from the map's limit line: Damascus and the Hauran, the Negev, Sinai to the Gulf of Suez, the Hejaz to Hegra. The map has no fill, so the old outlines are compared by area: NAB1 and NAB2 lay wholly inside it, covering **14% and 32%**. The map ends near 39.6 E, so the east edge is a straight closing line. |
+| Nabataea 168-87 and 72-63 BC; 63 BC-AD 106 | none | Old outlines kept, marked approximate. No open map shows these phases. |
+
 ## City coordinates fixed
 
 About 100 cities were compared with Pleiades, and every city with a Wikipedia coordinate was compared with that. Most agreed within 2 km. These were moved:
