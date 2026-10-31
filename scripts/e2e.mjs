@@ -235,6 +235,18 @@ ok("Nabataean maximal extent names the Villeneuve and Nehme map", /Nabatean King
 await setYearBox("-20");
 await page.waitForTimeout(300);
 ok("Herodian phase names the Herodian Kingdom map", /Herodian Kingdom\.png/.test(await openFromIndex(/Herodian Kingdom/)));
+await setYearBox("-1400");
+await page.waitForTimeout(300);
+ok("Mitanni is drawn at 1400 BC and cites its reference map", /Carte du Mitanni/.test(await openFromIndex(/Mitanni/)));
+await setYearBox("-1325");
+await page.waitForTimeout(300);
+ok("Hittite phase names the Hittite rule map", /Map Hittite rule/.test(await openFromIndex(/Hittites/)));
+await setYearBox("-1450");
+await page.waitForTimeout(300);
+ok("Egypt at 1450 BC names the Egyptian Empire map", /Hitt Egypt 1450/.test(await openFromIndex(/^\d+\s*Egypt/)));
+await setYearBox("-250");
+await page.waitForTimeout(300);
+ok("Ptolemaic phase names the Kaidor map", /Ptolemaic Kingdom III-II/.test(await openFromIndex(/Ptolemaic Kingdom/)));
 await setYearBox("1317");
 await page.waitForTimeout(300);
 ok("Mamluk phase names the 1317 reference map", /Mamluk Sultanate of Cairo 1317/.test(await findKingdom(/Ayyubid and Mamluk/)));

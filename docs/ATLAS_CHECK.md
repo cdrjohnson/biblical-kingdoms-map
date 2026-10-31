@@ -143,6 +143,21 @@ Reference maps: Map Hasmonean Kingdom-es.svg (Redtony, CC BY-SA 3.0; seven shade
 | Nabataea at its maximal extent, 87-72 BC (new phase) | Nabatean Kingdom map (limit line only) | Drawn from the map's limit line: Damascus and the Hauran, the Negev, Sinai to the Gulf of Suez, the Hejaz to Hegra. The map has no fill, so the old outlines are compared by area: NAB1 and NAB2 lay wholly inside it, covering **14% and 32%**. The map ends near 39.6 E, so the east edge is a straight closing line. |
 | Nabataea 168-87 and 72-63 BC; 63 BC-AD 106 | none | Old outlines kept, marked approximate. No open map shows these phases. |
 
+### Batch 3a: Hittites, Mitanni, Egypt in the New Kingdom, the Ptolemies
+
+Reference maps: Map Hittite rule en.svg (Sémhur base map, Ikonact, CC BY-SA 3.0), Carte du Mitanni.png (Sémhur base map, Zunkir, CC BY-SA 3.0), Hitt Egypt 1450 bc.svg (ArdadN, public domain) and Ptolemaic Kingdom III-II century BC (Kaidor, CC BY-SA 3.0). The maps were fitted to longitude and latitude with city control points (residuals mostly under 0.15 degrees); the outlines were redrawn by hand and clipped to Natural Earth land, and the fills were used only to measure overlap.
+
+| Kingdom (years) | Checked against | Result |
+|---|---|---|
+| Hittites, c. 1350-1300 BC | green line on the Hittite rule map | Overlap **0.64 → 0.97**. |
+| Hittites, maximum area of rule, 1300-1180 BC | light green on the same map | Overlap **0.74 → 0.89**. The edges of vassal lands are approximate. Cyprus is added for the last decades because the map shades it. |
+| Hittite Old Kingdom, 1650-1350 BC | none | Old outline kept and marked "not re-checked"; it overlaps the 1350 BC outline only 0.58. |
+| Mitanni, new kingdom entry, c. 1500-1260 BC | Carte du Mitanni | Maximal extension (overlap **0.96**) and heartland (**0.95**). The map gives one time slice, so the dating of the phases is approximate. |
+| Egypt, c. 1479-1425 BC (Thutmose III) | Hitt Egypt 1450 bc map | Overlap **0.19 → 0.96**: Nubia, the Red Sea coast, Canaan and Syria to the Euphrates. |
+| Egypt, other New Kingdom phases | none | Old outline kept, marked "not re-checked". |
+| Ptolemaic Egypt and Cyrenaica, 305-30 BC | Kaidor map | Overlap **0.31 → 0.92**. Desert borders are nominal. |
+| Ptolemaic Coele-Syria, 305-200 BC | Kaidor map (green) | Overlap **0.67 → 0.77**. |
+
 ## City coordinates fixed
 
 About 100 cities were compared with Pleiades, and every city with a Wikipedia coordinate was compared with that. Most agreed within 2 km. These were moved:
