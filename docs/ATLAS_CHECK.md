@@ -198,6 +198,18 @@ Reference maps: Median Empire-en.svg (Szajci and WillemBK, CC BY-SA 3.0) and Lyd
 
 **Disputed or debated.** A second open map, Median Empire.svg (Crates, CC BY-SA 4.0), draws the Medes smaller in the west (no Cappadocia, no Jazira). It could not be fitted reliably (best coast agreement about 0.82), so it is listed as checked but not measured. The app draws the first map and says in the Medes panel that the two disagree; the size and even the unity of the Median state are debated and Herodotus is the main source.
 
+### Batch 4b: Parthia
+
+Reference maps: Map of the Parthian Empire under Mithridates II.svg (Ro4444 and a Commons editor, CC BY-SA 4.0), the empire in 94 BC; and Map Parthian Empire-fr.png (Fabienkhan, CC BY-SA 2.5), an undated extent with no title or legend on the image. The first was placed on Natural Earth with a linear fit to the coast and cities; the second with a quadratic fit to city control points (errors up to about 1 degree).
+
+| Phase (years) | Checked against | Result |
+|---|---|---|
+| 124 to 91 BC | 94 BC map | New outline including the vassals as the map shades them (Armenia, Commagene, Characene, Persis and the eastern provinces). Overlap with the map **0.99**; the old outline overlaps the new one 0.51. |
+| 91 BC to AD 224 | French map | New outline (overlap with the map **0.91**; the old outline overlaps the new one 0.69). Using an undated map for these centuries is an interpretation. |
+| 247 to 124 BC | none | Old outlines kept, marked "not re-checked" (the early outline overlaps the 94 BC map only 0.11). |
+
+**Disputed or debated.** The two maps disagree about Parthia's reach (the outlines overlap 0.64): the 94 BC map runs from Armenia to Arachosia and the Paradan coast; the French map stops near Herat and the Hilmand and leaves Armenia out. The Parthia panel says so and does not pick a side.
+
 ## City coordinates fixed
 
 About 100 cities were compared with Pleiades, and every city with a Wikipedia coordinate was compared with that. Most agreed within 2 km. These were moved:
