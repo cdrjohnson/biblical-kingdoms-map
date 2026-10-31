@@ -42,6 +42,14 @@ IoU values are a rough guide only: the reference maps are themselves schematic, 
 | Fatimids | Fatimid Caliphate.PNG (Omar-toons); Fatimid Islamic Caliphate.png (Yenemus) | CC BY-SA 4.0; public domain |
 | Ayyubids 1193 and 1188 | Ayyubid Sultanate 1193 AD.jpg (Ro4444); Ayyubid Greatest Extent 1188.png (Arab League, altered) | CC BY-SA 4.0; public domain |
 | Mamluks 1317 | Mamluk Sultanate of Cairo 1317 AD.jpg (Ro4444) | CC BY-SA 4.0 |
+| Medes | Median Empire-en.svg (Szajci, WillemBK); Median Empire.svg (Crates), listed only as the disagreeing map | CC BY-SA 3.0; CC BY-SA 4.0 |
+| Lydia | Lydian kingdom-pt.svg (Szajci) | CC BY 3.0 |
+| Parthia | Map of the Parthian Empire under Mithridates II.svg (Ro4444, edited); Map Parthian Empire-fr.png (Fabienkhan) | CC BY-SA 4.0; CC BY-SA 2.5 |
+| Urartu | Urartu 743-en.svg (Sémhur) | CC BY-SA 4.0 |
+| Alexander's empire | Alexander-Empire 323bc.jpg (Thomas Lessman) | CC BY-SA 3.0 |
+| Elam | Elam Map-en.svg (Sémhur, Wkotwica, Morningstar1814) | CC BY-SA 3.0 |
+| Roman Judea AD 6-41 | Judaea Roman Province.svg (DEGA MD) | CC BY-SA 4.0 |
+| Islands | Natural Earth 10 m land | Public domain |
 | Coasts, modern borders | Natural Earth 10 m land and countries | Public domain |
 | City coordinates | Pleiades; Wikipedia | CC BY 3.0; CC BY-SA |
 
@@ -274,5 +282,8 @@ Modern Israel and ancient Israel shared one id (`israel`), so the modern outline
 - **Babylon**: hand-placed on its map, about 0.5° accuracy.
 - **Iron Age Transjordan under Israel** follows the 830 BC map, although 2 Kings 10:32-33 says Hazael took Gilead.
 - **Moab** early (-1300 to -850), and the older Israel, Philistia and Aram shapes, were not redrawn. Medeba and Heshbon lie outside Moab at -850 to -580 because the 830 BC map shows them north of Moab. Ezion-geber lies just outside the new Edom shape.
-- **Not re-checked in this pass**: Fatimid, Ayyubid, Mamluk, Rome, Medes, Parthia, Hittites, Egypt's ancient outlines and the smaller kingdoms. The islands list was not replaced and Cyprus is not drawn for the Crusader kingdom.
+- **Still not re-checked after the second pass**: Rome (judged consistent earlier), Canaan (no open map of the city-states could be fetched), Archelaus's ethnarchy and the tetrarchies of Antipas and Philip, Sasanian Iran, the early Medes (612-585 BC), early Parthia (247-124 BC), the early phases of Alexander's conquest (334-330 BC), Judea after AD 44, Urartu outside 764-735 BC (not drawn), and the Old Kingdom of the Hittites and the New Kingdom phases outside Thutmose III (marked "not re-checked" in their panels).
+- **Maps that disagree or are undated** (panels carry a "Disputed or debated" note): the Medes (two maps), Parthia (94 BC map against an undated French map), Elam (soft, undated zone), the 830 BC map against 2 Kings 10:32-33, and Mitanni and Urartu (one time slice each).
+- **Georeferencing quality**: Judaea 6-41 AD (under 0.05 deg), Urartu and Elam (up to 0.5 deg), the Parthian French map (up to about 1 deg), the Alexander map (small-scale world map, about 0.5 deg).
+- The islands list was replaced in Batch 4d; Cyprus is now also drawn for the Crusader-era kingdom (Batch 1).
 - Ancient kingdoms rarely had fixed borders. Every outline is a simplified guess at a zone of control, and scholars disagree on many.
