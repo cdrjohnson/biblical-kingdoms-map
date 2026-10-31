@@ -51,7 +51,6 @@ The site is plain static files, so it can be hosted anywhere. The Vite `base` is
 1. Create a public repository named `biblical-kingdoms-map` and push this code to the `main` branch.
 2. In the repository, open **Settings → Pages** and set **Source** to **GitHub Actions**.
 3. The workflow in `.github/workflows/deploy.yml` builds the site and deploys it on every push to `main`. The address is `https://<your-username>.github.io/biblical-kingdoms-map/`.
-4. Replace the `cdrjohnson` placeholders in `LICENSE` and this README.
 
 ## How the data and sources work
 
