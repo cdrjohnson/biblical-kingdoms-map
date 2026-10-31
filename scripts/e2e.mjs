@@ -188,6 +188,11 @@ await page.waitForTimeout(300);
 ok("modern era caption", (await page.getByText(/armistice|Armistice/).count()) > 0);
 
 /* atlas check: modern Israel has its own id (it duplicated the ancient kingdom's) and provenance shows in the panel */
+const openFromIndex = async (re) => {
+  const row = page.locator('div[role="button"]').filter({ hasText: re }).first();
+  if ((await row.count()) === 0) return "";
+  await row.click(); await page.waitForTimeout(200); return await detailsText();
+};
 const findKingdom = async (re) => {
   const m = page.locator('div[style*="touch-action: none"] svg g[style*="cursor: pointer"]');
   const n = await m.count();
@@ -214,6 +219,13 @@ ok("Ayyubid panel names the 1193 reference map", /Ayyubid Sultanate 1193 AD/.tes
 await setYearBox("1300");
 await page.waitForTimeout(300);
 ok("Kingdom of Cyprus is drawn in 1300 and cites Natural Earth", /Natural Earth/.test(await findKingdom(/Kingdom of Cyprus/)));
+await setYearBox("-1030");
+await page.waitForTimeout(300);
+ok("Saul's phase names the Biblica map of Saul, David and Solomon", /Biblica Open Bible Map 06/.test(await openFromIndex(/United Monarchy/)));
+await setYearBox("-900");
+await page.waitForTimeout(300);
+ok("Edom's panel explains the Ezion-geber extension", /Ezion-geber/.test(await openFromIndex(/Edom/)));
+ok("Israel's panel carries the Disputed or debated note on Gilead", /2 Kings 10:32 to 33/.test(await openFromIndex(/Kingdom of Israel/)));
 await setYearBox("1317");
 await page.waitForTimeout(300);
 ok("Mamluk phase names the 1317 reference map", /Mamluk Sultanate of Cairo 1317/.test(await findKingdom(/Ayyubid and Mamluk/)));

@@ -108,6 +108,24 @@ The kingdoms the first pass left alone were checked in batches, each built, test
 | Mamluks, 4 phases 1250-1517 | Mamluk 1317 map (measured) | 1250-1260 Egypt and the Hejaz; 1260-1291 with Syria; 1291-1400 with Cyrenaica and Nubia (the 1317 extent); 1400-1517 with Cilicia. Overlap with the 1317 map: **0.37 → 0.72**. The Nubian edge is approximate. |
 | Kingdom of Cyprus (new), 1192-1489 and 1489-1571 | Natural Earth island outline; Wikipedia | New kingdom; its extent is the island. No open map of the kingdom was found. The same real outline now replaces the rectangle used for Cyprus under Rome and the Ptolemies. The Crusader panel no longer says Cyprus is not drawn. |
 
+### Batch 2a: Israelite tribes, Saul, David, Solomon, Israel, Philistia, Moab, Aram, Edom
+
+Reference maps: Biblica Open Bible Maps 05, 06 and 07 (Biblica, Inc. and Biblica Open Study Bible Resources, CC BY-SA 4.0), each fitted to the coast and cities by control points (residual under 0.05 deg), and the Philistie Fer II site map (CC BY-SA 4.0, on Eric Gaba's relief base) for the Philistine sites. Outlines were redrawn by hand; the maps' fills were used only to measure overlap.
+
+| Kingdom (years) | Checked against | Result |
+|---|---|---|
+| Israelite tribes, c. 1200-1050 BC | Biblica Map 05 (tribal allotments) | Redrawn to the allotments of Joshua 13 to 19 as drawn there. Overlap **0.52 → 0.96**. The panel says this is the biblical ideal, not a settlement survey. |
+| Saul, 1050-1010 BC | Biblica Map 06 (Saul fill) | Central hills, Gilead and the Jezreel edge, drawn as one outline. Overlap **0.37 → 0.89**. |
+| David, 1010-970 BC | Biblica Map 06 (David fill, which includes Saul's land) | Overlap **0.49 → 0.93**. |
+| Solomon's sphere (dashed), 970-931 BC | Biblica Map 06 (green zone) | Overlap **0.21 → 0.90**. Still marked contested. |
+| Israel (north), 931-841 and 753-732 BC | Biblica Map 07 | Overlap **0.48 → 0.89**. The map's fill south of Medeba is drawn dashed and only from Omri (Mesha Stele). |
+| Philistia, c. 1175-1000 BC | Philistie Fer II site map; Natural Earth coast | No open area map exists for this period, so the outline is a hull of the 17 mapped sites (Tel Qasile to Tell el-Farah south, Lachish) plus a 0.13 deg margin, clipped to land. The five cities lie inside. Not an overlap measurement. |
+| Moab before Mesha, c. 1300-850 BC | 830 BC map (Moab fill) | Cut from that fill at the Arnon (31.47 N). Derived, no early map exists. |
+| Aram before and after Hazael | 830 BC map (Aram fill) | The part north of the Yarmuk (32.7 N). Derived, approximate. |
+| Edom | 830 BC map, Wikipedia (Ezion-Geber) | Overlap with the 830 BC fill 0.33 → 0.93. The 830 BC map stops at 30.1 N, so the outline is extended by hand along the Arabah to the head of the Gulf of Aqaba: **Ezion-geber now lies inside Edom**, supported by 1 Kings 9:26 and Wikipedia only (no map reaches it; the site is debated). |
+
+Disputed or debated notes were added to the Israel and Aram panels: 2 Kings 10:32 to 33 says Hazael took all of Gilead, while the 830 BC map leaves Israel a strip east of the Jordan. The outlines follow the map and the panels say the question is open.
+
 ## City coordinates fixed
 
 About 100 cities were compared with Pleiades, and every city with a Wikipedia coordinate was compared with that. Most agreed within 2 km. These were moved:
