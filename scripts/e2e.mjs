@@ -208,6 +208,15 @@ ok("Ottoman Empire is drawn before 1517 (gap filled)", (await findKingdom(/Ottom
 await setYearBox("1700");
 await page.waitForTimeout(300);
 ok("Iran panel shows the Safavid-era extent with its reference map", /Safavid Empire 1501 1722/.test(await findKingdom(/Persia \/ Iran/)));
+await setYearBox("1193");
+await page.waitForTimeout(300);
+ok("Ayyubid panel names the 1193 reference map", /Ayyubid Sultanate 1193 AD/.test(await findKingdom(/Ayyubid and Mamluk/)));
+await setYearBox("1300");
+await page.waitForTimeout(300);
+ok("Kingdom of Cyprus is drawn in 1300 and cites Natural Earth", /Natural Earth/.test(await findKingdom(/Kingdom of Cyprus/)));
+await setYearBox("1317");
+await page.waitForTimeout(300);
+ok("Mamluk phase names the 1317 reference map", /Mamluk Sultanate of Cairo 1317/.test(await findKingdom(/Ayyubid and Mamluk/)));
 ok("References lists the reference maps and data group", (await page.getByText("Reference maps and data checked").count()) >= 1);
 await setYearBox("AD 30");
 

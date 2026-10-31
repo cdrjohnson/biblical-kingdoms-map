@@ -39,6 +39,9 @@ IoU values are a rough guide only: the reference maps are themselves schematic, 
 | Zand Iran | Map of the Zand dynasty.png | Public domain |
 | Afsharid Iran | Afsharid dynasty (greatest extent).svg (Ali Zifan) | CC BY-SA 4.0 |
 | Rome | Extent of the Roman Republic and the Roman Empire between 218 BC and 117 AD.png (Varana) | CC BY-SA 3.0 |
+| Fatimids | Fatimid Caliphate.PNG (Omar-toons); Fatimid Islamic Caliphate.png (Yenemus) | CC BY-SA 4.0; public domain |
+| Ayyubids 1193 and 1188 | Ayyubid Sultanate 1193 AD.jpg (Ro4444); Ayyubid Greatest Extent 1188.png (Arab League, altered) | CC BY-SA 4.0; public domain |
+| Mamluks 1317 | Mamluk Sultanate of Cairo 1317 AD.jpg (Ro4444) | CC BY-SA 4.0 |
 | Coasts, modern borders | Natural Earth 10 m land and countries | Public domain |
 | City coordinates | Pleiades; Wikipedia | CC BY 3.0; CC BY-SA |
 
@@ -91,6 +94,19 @@ Babylon, 605-539 BC: now follows the Nabonidus map (area 75 → 92, IoU old/new 
 |---|---|
 | Ottomans before 1517 | Four new keyframes: 1299-1354, 1354-1402, 1402-1453, 1453-1517, drawn from the Wikipedia articles on the rise of the Ottomans and the Interregnum, and the Natural Earth coast. No open per-phase map was found, so these are the least checked of the new outlines. |
 | Iran 1501-2027 | Eight keyframes (Safavid 1501-1534, 1534-1590, 1590-1722; Hotak/Afsharid 1722-1736 and 1736-1747; Zand 1747-1794; Qajar 1794-1828 and 1828-2027, the last on the Natural Earth border). Checked by eye against the Safavid, Zand and Afsharid maps and Natural Earth. |
+
+## Second pass (batches)
+
+The kingdoms the first pass left alone were checked in batches, each built, tested and deployed before the next.
+
+### Batch 1: Fatimid, Ayyubid, Mamluk, Cyprus
+
+| Kingdom (years) | Checked against | Result |
+|---|---|---|
+| Fatimids, 3 phases 969-1171 | Ayyubid 1193 and Mamluk 1317 maps for the Egypt, Cyrenaica and Hejaz shapes; the two Fatimid maps on Commons by eye; Natural Earth coast | The old single block is replaced by 969-1048 (with Ifriqiya until the Zirid break), 1048-1099 and 1099-1171 (Egypt and Ascalon). **No overlap was measured**: the Fatimid maps are schematic and could not be georeferenced (best fit IoU 0.42), so the Maghreb and Levant edges are approximate. |
+| Ayyubids, 4 phases 1171-1250 | Ayyubid 1193 map (measured), Ayyubid 1188 map (by eye) | Egypt, Cyrenaica, the Hejaz, Yemen, Syria and the Jazira are now separate shapes along their real coasts. Overlap with the 1193 map: **0.40 → 0.76**. A Tripolitanian strip (1171-1188) follows the 1188 map, which could not be overlaid exactly. |
+| Mamluks, 4 phases 1250-1517 | Mamluk 1317 map (measured) | 1250-1260 Egypt and the Hejaz; 1260-1291 with Syria; 1291-1400 with Cyrenaica and Nubia (the 1317 extent); 1400-1517 with Cilicia. Overlap with the 1317 map: **0.37 → 0.72**. The Nubian edge is approximate. |
+| Kingdom of Cyprus (new), 1192-1489 and 1489-1571 | Natural Earth island outline; Wikipedia | New kingdom; its extent is the island. No open map of the kingdom was found. The same real outline now replaces the rectangle used for Cyprus under Rome and the Ptolemies. The Crusader panel no longer says Cyprus is not drawn. |
 
 ## City coordinates fixed
 
