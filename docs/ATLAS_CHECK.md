@@ -158,6 +158,22 @@ Reference maps: Map Hittite rule en.svg (Sémhur base map, Ikonact, CC BY-SA 3.0
 | Ptolemaic Egypt and Cyrenaica, 305-30 BC | Kaidor map | Overlap **0.31 → 0.92**. Desert borders are nominal. |
 | Ptolemaic Coele-Syria, 305-200 BC | Kaidor map (green) | Overlap **0.67 → 0.77**. |
 
+### Batch 3b: Egypt, Middle Kingdom to the Late Period
+
+Reference maps: Ancient Egypt old and middle kingdom-en.svg (RedTony, CC BY-SA 4.0), Third Intermediate Period map.svg (Jeff Dahl, CC BY-SA 4.0) and Egypt kush.svg (Lommes, CC BY-SA 4.0). None of them has usable city control points, so each was fitted to longitude and latitude by matching its coastline to Natural Earth land (agreement 0.95, 0.99 and 0.93 of sampled pixels), with the city icons as a check (about 0.3 degrees off at worst). The Old Kingdom is before the map's 2000 BC start, so it is not drawn.
+
+| Kingdom (years) | Checked against | Result |
+|---|---|---|
+| Egypt, Middle Kingdom, 2000-1650 BC | Old and Middle Kingdoms map (Old Kingdom area, Nile, annexed Lower Nubia) | Overlap **0.17 → 0.95**. The outline is now the map's whole Egypt (delta, Sinai, desert borders) with Lower Nubia to the Second Cataract; the old outline hugged the valley. The desert borders are nominal. |
+| Egypt, Second Intermediate Period, 1650-1550 BC | same map, Old Kingdom area | Overlap **0.17 → 0.96**. The map shows the Hyksos only as arrows, so the division is not drawn. |
+| Egypt, Third Intermediate Period, 1150-744 BC | Third Intermediate Period map | The map's coloured Delta and Valley zones lie **82%** inside the first new outline and **99.9%** inside the final one (the delta edge was extended). The local rulers are not drawn separately. |
+| Egypt and Kush, 25th Dynasty, 744-656 BC | Egypt kush map | The map is a blurred schematic. Overlap of the Nubian part **0.28 → 0.93**. The south edge is cut at 16 N, near Meroe, the map's southernmost city; the real limit is poorly known. |
+| Egypt, 656-525 BC and 404-343 BC | same outlines | Uses the new Egypt outline, since no open map shows these phases separately. |
+| Necho II in Syria, 609-605 BC | none | Egypt part redrawn; the Syrian part is kept and marked "not re-checked". |
+| New Kingdom outside the Thutmose III years | none | The Egypt part now uses the new outline; the Syrian part is unchanged and marked "not re-checked". |
+
+Egypt also appears in the Neo-Assyrian, Achaemenid and Alexander outlines; those now use the same new Egypt outline. The old Sinai patch was dropped because the new outline includes Sinai.
+
 ## City coordinates fixed
 
 About 100 cities were compared with Pleiades, and every city with a Wikipedia coordinate was compared with that. Most agreed within 2 km. These were moved:

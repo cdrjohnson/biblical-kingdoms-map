@@ -247,6 +247,15 @@ ok("Egypt at 1450 BC names the Egyptian Empire map", /Hitt Egypt 1450/.test(awai
 await setYearBox("-250");
 await page.waitForTimeout(300);
 ok("Ptolemaic phase names the Kaidor map", /Ptolemaic Kingdom III-II/.test(await openFromIndex(/Ptolemaic Kingdom/)));
+await setYearBox("-1800");
+await page.waitForTimeout(300);
+ok("Egypt at 1800 BC cites the Old and Middle Kingdoms map", /Ancient Egypt old and middle kingdom/.test(await openFromIndex(/^\d+\s*Egypt/)));
+await setYearBox("-1000");
+await page.waitForTimeout(300);
+ok("Egypt at 1000 BC cites the Third Intermediate Period map", /Third Intermediate Period map/.test(await openFromIndex(/^\d+\s*Egypt/)));
+await setYearBox("-700");
+await page.waitForTimeout(300);
+ok("Egypt at 700 BC cites the Kushite Empire map", /Egypt kush/.test(await openFromIndex(/^\d+\s*Egypt/)));
 await setYearBox("1317");
 await page.waitForTimeout(300);
 ok("Mamluk phase names the 1317 reference map", /Mamluk Sultanate of Cairo 1317/.test(await findKingdom(/Ayyubid and Mamluk/)));
