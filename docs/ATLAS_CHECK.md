@@ -221,6 +221,10 @@ Reference map: Urartu 743-en.svg (Sémhur, CC BY-SA 4.0), "Urartu at its greates
 
 **Disputed or debated.** The Urartu panel notes that Ararat in 2 Kings 19:37 and Jeremiah 51:27 is generally identified with Urartu, while the mountain of Genesis 8:4 is a separate question that the map does not address.
 
+### Batch 4d: the islands list
+
+The six hand-drawn island holes in the Mediterranean (Sicily, Crete, Cyprus, Sardinia, Corsica, Rhodes) are replaced by 26 islands taken from the Natural Earth 10 m land layer (public domain), simplified to 1.5 km and cut to the app's sea outline. Added: Malta, Samos, Chios, Cos, Lemnos, Corfu, Kefalonia, Zakynthos, Naxos, Djerba and other islands of 0.02 square degrees or more. Overlap of each old island with its Natural Earth outline: Sicily 0.79, Sardinia 0.83, Corsica 0.81, Cyprus 0.75, Crete 0.62, Rhodes 0.52. Overlap of the app's sea with Natural Earth sea rose in Italy from 0.88 to 0.90, in the Aegean and Greece from 0.88 to 0.89 and on the Levant coast from 0.92 to 0.93. An end-to-end test checks that the sea outline carries at least 20 island holes.
+
 ## City coordinates fixed
 
 About 100 cities were compared with Pleiades, and every city with a Wikipedia coordinate was compared with that. Most agreed within 2 km. These were moved:
