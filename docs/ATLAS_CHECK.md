@@ -174,6 +174,18 @@ Reference maps: Ancient Egypt old and middle kingdom-en.svg (RedTony, CC BY-SA 4
 
 Egypt also appears in the Neo-Assyrian, Achaemenid and Alexander outlines; those now use the same new Egypt outline. The old Sinai patch was dropped because the new outline includes Sinai.
 
+### Batch 3c: Seleucid Empire
+
+Reference map: Seleucid Empire 200-64 BC - ru.svg (Kaidor, CC BY-SA 3.0). It shows four nested extents: the state c. 200 BC after Antiochus III's eastern campaign, the state after Apamea (188 BC), the state at the end of the 2nd century BC, and the territory before the Roman province of 64 BC. The map was fitted to longitude and latitude with 29 city control points and a degree-2 fit (residuals mostly under 0.15 degrees, at worst 0.27); the coast agreed with Natural Earth for 97% of sampled pixels in the Levant and Mesopotamia and less well in the Aegean. Each extent was taken from its fill colours and redrawn; the fills were used for overlap. East of 62 E the outline is not clipped to Natural Earth land.
+
+| Phase (years) | Result |
+|---|---|
+| c. 200 to 190 BC | Overlap **0.41 → 0.96** (old outline for 301 to 200 BC against the same map). The map's yellow "dependent territories" are not included. |
+| After Apamea, 190 to 141 BC | Overlap **0.46 → 0.98**. |
+| 129 to 69 BC | Overlap **0.54 → 0.96**. The Armenian occupation (83 to 69 BC) is not drawn. |
+| 69 to 64 BC | Overlap **0.22 → 0.92**. |
+| 312 to 200 BC and 141 to 129 BC | Old outlines kept and marked "not re-checked"; the map shows no stage in these years. |
+
 ## City coordinates fixed
 
 About 100 cities were compared with Pleiades, and every city with a Wikipedia coordinate was compared with that. Most agreed within 2 km. These were moved:
