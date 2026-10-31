@@ -4,7 +4,7 @@ An interactive map of the Biblical kingdoms, empires and modern states, from **2
 
 ![Overview of the map at AD 30, with the timeline slider under the map](docs/images/desktop-map-and-slider.png)
 
-**Live demo:** `https://{{GITHUB_USERNAME}}.github.io/biblical-kingdoms-map/` *(placeholder: it works once GitHub Pages is switched on, see [Deployment](#deployment))*
+**Live demo:** [cdrjohnson.github.io/biblical-kingdoms-map](https://cdrjohnson.github.io/biblical-kingdoms-map/)
 
 **User guide:** [docs/USER_GUIDE.md](docs/USER_GUIDE.md) · [PDF](docs/User-Guide.pdf)
 
@@ -51,7 +51,7 @@ The site is plain static files, so it can be hosted anywhere. The Vite `base` is
 1. Create a public repository named `biblical-kingdoms-map` and push this code to the `main` branch.
 2. In the repository, open **Settings → Pages** and set **Source** to **GitHub Actions**.
 3. The workflow in `.github/workflows/deploy.yml` builds the site and deploys it on every push to `main`. The address is `https://<your-username>.github.io/biblical-kingdoms-map/`.
-4. Replace the `{{GITHUB_USERNAME}}` placeholders in `LICENSE` and this README.
+4. Replace the `cdrjohnson` placeholders in `LICENSE` and this README.
 
 ## How the data and sources work
 
@@ -83,4 +83,4 @@ Before sending a pull request, run `npm run build` and, with `npm run preview` r
 
 ## License
 
-[MIT](LICENSE) © 2026 {{GITHUB_USERNAME}}. Linked sources keep their own licences; see [NOTICE](NOTICE).
+[MIT](LICENSE) © 2026 cdrjohnson. Linked sources keep their own licences; see [NOTICE](NOTICE).
