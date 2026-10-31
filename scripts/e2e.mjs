@@ -276,6 +276,12 @@ ok("Urartu is drawn at 743 BC and cites its reference map", /Urartu 743-en/.test
 await setYearBox("-325");
 await page.waitForTimeout(300);
 ok("Macedon (Alexander) at 325 BC cites the 323 BC map", /Alexander-Empire 323bc/.test(await openFromIndex(/^\d+\s*Macedon/)));
+await setYearBox("-800");
+await page.waitForTimeout(300);
+ok("Elam at 800 BC cites the Elam map", /Elam Map-en/.test(await openFromIndex(/^\d+\s*Elam/)));
+await setYearBox("20");
+await page.waitForTimeout(300);
+ok("Roman Judea at AD 20 cites the Judaea Roman Province map", /Judaea Roman Province/.test(await openFromIndex(/^\d+\s*Judea \(Roman/)));
 await setYearBox("1317");
 await page.waitForTimeout(300);
 ok("Mamluk phase names the 1317 reference map", /Mamluk Sultanate of Cairo 1317/.test(await findKingdom(/Ayyubid and Mamluk/)));

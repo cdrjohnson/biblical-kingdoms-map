@@ -234,6 +234,18 @@ Reference map: Alexander-Empire 323bc.jpg (Thomas Lessman, WorldHistoryMaps.info
 | 330 to 323 BC | Lessman map | New outline from Macedonia and the Aegean coast to the Indus and Kashmir, including Egypt (overlap with the map **0.97**; the old Greece, Persia and Egypt shapes overlapped the new one 0.52). Only the mainland is shaded on the map, so Cyprus, Crete and the Aegean islands are not included. |
 | 334 to 330 BC | none | Old outlines kept and marked "not re-checked": the map shows only 323 BC. |
 
+### Batch 4f: Elam and the Roman province of Judea
+
+Reference maps: Elam Map-en.svg (Sémhur base map, Wkotwica and Morningstar1814, CC BY-SA 3.0), placed on 12 Mesopotamian cities (errors under 0.4 degree); and Judaea Roman Province.svg (DEGA MD, CC BY-SA 4.0), an equirectangular WGS84 map placed on 14 cities (errors under 0.05 degree).
+
+| Kingdom (years) | Checked against | Result |
+|---|---|---|
+| Elam, 2000 to 647 BC | Elam map | New outline of the core zone from Susa and Awan to Anshan (overlap with the map's orange zone **0.97**; the old outline overlapped the new one 0.55, area 11.0 → 15.4). The map shades a soft, undated zone, so it is used for the whole span; this is stated in the panel with a disputed note. |
+| Judea (Roman province), AD 6 to 41 | Judaea Roman Province map | New outline: Judea, Samaria and Idumea with the coast from Jamnia to Caesarea (overlap with the map **0.98**; the old outline overlapped the new one 0.62, area 1.24 → 0.98). The map leaves the Ascalon and Gaza area out of the province. |
+| Judea, AD 44 to 135 | none | Old outline kept, marked "not re-checked". |
+
+Not changed: Archelaus's ethnarchy (4 BC to AD 6) still uses the old Judea outline, and the tetrarchies of Antipas and Philip (AD 6 to 41) were not compared with the orange areas of the Judaea map, whose legend does not say what they stand for.
+
 ## City coordinates fixed
 
 About 100 cities were compared with Pleiades, and every city with a Wikipedia coordinate was compared with that. Most agreed within 2 km. These were moved:
