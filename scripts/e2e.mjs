@@ -273,6 +273,9 @@ await setYearBox("-743");
 await page.waitForTimeout(300);
 ok("Urartu is drawn at 743 BC and cites its reference map", /Urartu 743-en/.test(await openFromIndex(/^\d+\s*Urartu/)));
 { const n = await page.evaluate(() => Math.max(0, ...[...document.querySelectorAll('path[fill-rule="evenodd"]')].map((e) => (e.getAttribute("d") || "").split("M").length - 1))); ok("the Mediterranean outline has the Natural Earth island holes (at least 20)", n >= 20, "subpaths " + n); }
+await setYearBox("-325");
+await page.waitForTimeout(300);
+ok("Macedon (Alexander) at 325 BC cites the 323 BC map", /Alexander-Empire 323bc/.test(await openFromIndex(/^\d+\s*Macedon/)));
 await setYearBox("1317");
 await page.waitForTimeout(300);
 ok("Mamluk phase names the 1317 reference map", /Mamluk Sultanate of Cairo 1317/.test(await findKingdom(/Ayyubid and Mamluk/)));
